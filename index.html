@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>欢迎访问橘子七个七的主页</h1>
+    </header>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>我是一名生物信息工程师，擅长多种编程语言，喜欢探索新技术。</p>
+    </section>
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>R语言</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>邮箱：example@example.com</p>
+        <button onclick="showMessage()">发送消息</button>
+    </section>
+    <section id="visits">
+        <h2>访问量</h2>
+        <p id="visit-count">访问量: 0</p>
+    </section>
+    <script>
+        function showMessage() {
+            alert('感谢你的关注，我会尽快回复你！');
+        }
+
+        function updateVisitCount() {
+            let visitCount = localStorage.getItem('visitCount');
+            if (visitCount === null) {
+                visitCount = 1;
+            } else {
+                visitCount = parseInt(visitCount) + 1;
+            }
+            localStorage.setItem('visitCount', visitCount);
+            document.getElementById('visit-count').textContent = `访问量: ${visitCount}`;
+        }
+
+        updateVisitCount();
+    </script>
+</body>
+
+</html>
