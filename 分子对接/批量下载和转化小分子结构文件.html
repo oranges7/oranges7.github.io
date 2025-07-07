@@ -1,0 +1,90 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+    <title data-trilium-title>批量下载和转化小分子结构文件</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>批量下载和转化小分子结构文件</h1>
+
+      <div class="ck-content">
+        <div class="page">
+          <div>
+            <p data-first-child="" data-pid="Oc642g8-">好久不发推送啦，计划重振旗鼓，激励自己每天学习新东西~</p>
+            <p data-pid="YEhasl1u">这几天给师姐弄批量对接，她是从<span><a data-za-not-track-link="true" data-paste-text="true" href="https://zhida.zhihu.com/search?content_id=245963622&amp;content_type=Article&amp;match_order=1&amp;q=%E4%BB%A3%E8%B0%A2%E7%BB%84&amp;zhida_source=entity">代谢组</a></span>中得到了一些小分子，想和一个蛋白对接，筛选其中与该蛋白结合很强的小分子，代谢组提供了小分子的名字和<span><a data-za-not-track-link="true" data-paste-text="true" href="https://zhida.zhihu.com/search?content_id=245963622&amp;content_type=Article&amp;match_order=1&amp;q=CID%E5%8F%B7&amp;zhida_source=entity">CID号</a></span>，需要根据该信息获得小分子的结构文件，用于对接。</p>
+            <p
+            data-pid="TIRR7TSc">于是诞生了本推送，本推送可以解决：</p>
+              <p data-pid="XPOrr1_m"><b>有了一批小分子CID number，批量下载它们的结构文件用于对接</b>；</p>
+              <p data-pid="ZBwXdF9G">小分子CID number是pubchem官网上给予的每个小分子独一无二的id号，如果有小分子名称，没有CID，可以在pubchem中搜索其对应的id号。</p>
+              <h3><b>1.根据小分子CID号批量下载其结构文件</b></h3>
+              <p data-pid="EzQTDoFH">小分子CID号存在文本文件中，格式如下（这里以两个小分子为例）：</p>
+              <p data-pid="qc4pLuBb">文本文件命名为molecule.txt</p>
+              <p data-pid="JXW8PV0m">进入pubchem官网<a href="https://link.zhihu.com/?target=https%3A//pubchem.ncbi.nlm.nih.gov/"
+                data-za-detail-view-id="1043">PubChem (nih.gov)</a>
+              </p>
+              <figure data-size="normal">
+                <p>
+                  <img src="批量下载和转化小分子结构文件_v2-936a8937.jpg" data-caption="" data-size="normal"
+                  data-rawwidth="1942" data-rawheight="1084" data-original-token="v2-1d8e6210b94cca2fcf1f2e77eea23b12"
+                  width="1942" data-original="https://pic4.zhimg.com/v2-936a8937eff2c2a2f0d2221129110f3b_r.jpg">
+                </p>
+              </figure>
+              <p data-pid="c-1pQDAM">点击“Upload ID list”，加载刚刚创建的molecule.txt文件，再点击“search pubchem with this
+                list”即可。</p>
+              <figure data-size="normal">
+                <p>
+                  <img src="批量下载和转化小分子结构文件_v2-4836f316.jpg" data-caption="" data-size="normal"
+                  data-rawwidth="1438" data-rawheight="1095" data-original-token="v2-738334f2c3bc21a8e1f9b8875264f4c1"
+                  width="1438" data-original="https://pic4.zhimg.com/v2-4836f31673b8d891187788524a8298d7_r.jpg">
+                </p>
+              </figure>
+              <figure data-size="normal">
+                <p>
+                  <img src="批量下载和转化小分子结构文件_v2-fe1061a7.jpg" data-caption="" data-size="normal"
+                  data-rawwidth="1941" data-rawheight="1090" data-original-token="v2-1bdc60e59eb67b00d62eecd578385a94"
+                  width="1941" data-original="https://pic4.zhimg.com/v2-fe1061a71b9d8198ed02bc336c9e6fd9_r.jpg">
+                </p>
+              </figure>
+              <p data-pid="WpAZpFNt">点击右侧download，根据需求下载，如果想下载结构文件，点击需要的格式，本次要做批量对接，因此选择<span><a data-za-not-track-link="true" data-paste-text="true" href="https://zhida.zhihu.com/search?content_id=245963622&amp;content_type=Article&amp;match_order=1&amp;q=SDF%E6%A0%BC%E5%BC%8F&amp;zhida_source=entity">SDF格式</a></span>，建议选择2D，因为有的小分子没有3D，2D格式可以保证尽量多的下载到小分子结构。</p>
+              <h3><b>2.小分子格式转化</b></h3>
+              <p data-pid="tMrwENag">对接需要mol2格式文件，推荐使用openbabel进行格式转化。</p>
+              <p data-pid="bOC33Kuc">openbabel下载网址：<a href="https://link.zhihu.com/?target=https%3A//github.com/openbabel/openbabel/releases">Releases · openbabel/openbabel (github.com)</a>
+              </p>
+              <p data-pid="-rD-sYO6">有windows版本，左边选择输入文件格式（本次是sdf），再加载输入文件,右侧选择输出文件格式（本次是mol2），定义输出文件名，然后点击中间的“convert”，windows可实现少量小分子格式转换，如果上百个小分子，建议用Linux版本，不然电脑会崩。</p>
+              <figure
+              data-size="normal">
+                <p>
+                  <img src="批量下载和转化小分子结构文件_v2-4766db03.jpg" data-caption="" data-size="normal"
+                  data-rawwidth="1767" data-rawheight="511" data-original-token="v2-a18e4cf943ed6dfd0f04c24087d5f946"
+                  width="1767" data-original="https://pic1.zhimg.com/v2-4766db0383c61fb328011df23065df2a_r.jpg">
+                </p>
+                </figure>
+                <p data-pid="4p0EyCDl">linux的转化命令：</p>
+                <div><pre><code><span>#openbabel安装：</span>
+<span>#用Babel软件(https://github.com/openbabel/openbabel/releases)</span>
+<span>#下载后解压</span>
+<span>tar</span> <span>xvf</span> <span>openbabel</span><span>-</span><span>3.1</span><span>.</span><span>1</span><span>-</span><span>source</span><span>.</span><span>tar</span><span>.</span><span>bz2</span> 
+<span>cd</span> <span>openbabel</span><span>-</span><span>3.1</span><span>.</span><span>1</span>
+<span>#安装</span>
+<span>mkdir</span> <span>build</span>
+<span>cd</span> <span>build</span>
+<span>cmake3</span> <span>..</span>
+<span>sudo</span> <span>make</span> <span>-</span><span>j</span> <span>install</span>
+<span>#将sdf格式转成mol2格式并且将每个小分子拆分成单个mol2文件：</span>
+<span>obabel</span> <span>-</span><span>i</span> <span>sdf</span> <span>human_molecules</span><span>.</span><span>sdf</span> <span>-</span><span>o</span> <span>mol2</span> <span>-</span><span>O</span> <span>human</span><span>.</span><span>mol2</span> <span>-</span><span>m</span></code></pre>
+                </div>
+                <h3><b>3.批量小分子对接</b></h3>
+                <p data-pid="ai11gLY6">请看往期推送：<a href="https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/4bBy6Niz9lHMLwvLLvYFuQ">小分子虚拟筛选与分子模拟课程——4.批量小分子对接 (qq.com)</a>
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

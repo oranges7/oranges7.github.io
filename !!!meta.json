@@ -1,0 +1,227 @@
+{
+	"formatVersion": 2,
+	"appVersion": "0.95.0",
+	"files": [
+		{
+			"isClone": false,
+			"noteId": "jk76yHY0uSH2",
+			"notePath": [
+				"jk76yHY0uSH2"
+			],
+			"title": "分子对接",
+			"notePosition": 20,
+			"prefix": null,
+			"isExpanded": true,
+			"type": "text",
+			"mime": "text/html",
+			"attributes": [],
+			"format": "html",
+			"dataFileName": "分子对接.html",
+			"attachments": [],
+			"dirFileName": "分子对接",
+			"children": [
+				{
+					"isClone": false,
+					"noteId": "F44sxnTgfxOL",
+					"notePath": [
+						"jk76yHY0uSH2",
+						"F44sxnTgfxOL"
+					],
+					"title": "通过化合物名称获取smiles、cid",
+					"notePosition": 10,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "code",
+					"mime": "text/x-python",
+					"attributes": [],
+					"dataFileName": "通过化合物名称获取smiles、cid.dat",
+					"attachments": []
+				},
+				{
+					"isClone": false,
+					"noteId": "SMv0SF31tK3c",
+					"notePath": [
+						"jk76yHY0uSH2",
+						"SMv0SF31tK3c"
+					],
+					"title": "批量下载和转化小分子结构文件",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "clipType",
+							"value": "page",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "pageUrl",
+							"value": "https://zhuanlan.zhihu.com/p/710244208",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-globe",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"format": "html",
+					"dataFileName": "批量下载和转化小分子结构文件.html",
+					"attachments": [
+						{
+							"attachmentId": "8fuEs5qeb0zf",
+							"title": "v2-4766db0383c61fb328011df23065df2a_1440w.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "批量下载和转化小分子结构文件_v2-4766db03.jpg"
+						},
+						{
+							"attachmentId": "J3cqsZLleNjN",
+							"title": "v2-fe1061a71b9d8198ed02bc336c9e6fd9_1440w.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "批量下载和转化小分子结构文件_v2-fe1061a7.jpg"
+						},
+						{
+							"attachmentId": "PvphSpSzvCpT",
+							"title": "v2-936a8937eff2c2a2f0d2221129110f3b_1440w.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "批量下载和转化小分子结构文件_v2-936a8937.jpg"
+						},
+						{
+							"attachmentId": "rcJqh9CbKwzP",
+							"title": "v2-4836f31673b8d891187788524a8298d7_1440w.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "批量下载和转化小分子结构文件_v2-4836f316.jpg"
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "4RGslf7Z5hhz",
+					"notePath": [
+						"jk76yHY0uSH2",
+						"4RGslf7Z5hhz"
+					],
+					"title": "一种使用OpenBabel将包含多个小分子的sdf文件转化为仅包含单个小分子的mol2文件的方法 - 哔哩哔哩",
+					"notePosition": 30,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "clipType",
+							"value": "page",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "pageUrl",
+							"value": "https://www.bilibili.com/opus/457549415872709079",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-globe",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"format": "html",
+					"dataFileName": "一种使用OpenBabel将包含多个小分子的sdf文件转化为.html",
+					"attachments": [
+						{
+							"attachmentId": "aULh16hUTAbJ",
+							"title": "d85395dda05cf0a986751150ae744266d4e038cd.png@1192w.webp",
+							"role": "image",
+							"mime": "image/webp",
+							"position": 10,
+							"dataFileName": "一种使用OpenBabel将包含多个小分子的sdf.webp"
+						},
+						{
+							"attachmentId": "bxMqV2QXOQ5z",
+							"title": "64c9254e6aab5dd408c7d9e084ef7d2c9f22a1b1.png@1192w.webp",
+							"role": "image",
+							"mime": "image/webp",
+							"position": 10,
+							"dataFileName": "1_一种使用OpenBabel将包含多个小分子的sdf.webp"
+						},
+						{
+							"attachmentId": "CBL1VieSHSqB",
+							"title": "385a765ae51eb70fc6b6d9fce1db0cbe0e152b2a.png@1192w.webp",
+							"role": "image",
+							"mime": "image/webp",
+							"position": 10,
+							"dataFileName": "2_一种使用OpenBabel将包含多个小分子的sdf.webp"
+						},
+						{
+							"attachmentId": "YQpxeGvfQ7fa",
+							"title": "e2f37cf2b00931391341c7b212d15a4834c571a2.png@1192w.webp",
+							"role": "image",
+							"mime": "image/webp",
+							"position": 10,
+							"dataFileName": "3_一种使用OpenBabel将包含多个小分子的sdf.webp"
+						},
+						{
+							"attachmentId": "zN0PEEzIpFZQ",
+							"title": "1fb248b3d7c7bc1c624057df9c62d7ec59d1f0f9.png@1192w.webp",
+							"role": "image",
+							"mime": "image/webp",
+							"position": 10,
+							"dataFileName": "4_一种使用OpenBabel将包含多个小分子的sdf.webp"
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "AxLlW6HFp5uN",
+					"notePath": [
+						"jk76yHY0uSH2",
+						"AxLlW6HFp5uN"
+					],
+					"title": "pymol",
+					"notePosition": 40,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [],
+					"format": "html",
+					"dataFileName": "pymol.html",
+					"attachments": []
+				}
+			]
+		},
+		{
+			"noImport": true,
+			"dataFileName": "navigation.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "index.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "style.css"
+		}
+	]
+}

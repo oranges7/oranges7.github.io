@@ -1,0 +1,76 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_parent">
+    <title data-trilium-title>一种使用OpenBabel将包含多个小分子的sdf文件转化为仅包含单个小分子的mol2文件的方法 - 哔哩哔哩</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>一种使用OpenBabel将包含多个小分子的sdf文件转化为仅包含单个小分子的mol2文件的方法 - 哔哩哔哩</h1>
+
+      <div class="ck-content">
+        <div class="page">
+          <div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">首先需要下载并安装OpenBabel。可以从https://github.com/openbabel/openbabel/releases下载最新版本，如访问GitHub有困难，可以下载我上传的3.1.1版本https://share.weiyun.com/oBJnJPz9</span>
+            </p>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">安装完毕后打开，界面如下：</span>
+            </p>
+            <div>
+              <picture>
+                <img src="4_一种使用OpenBabel将包含多个小分子的sdf.webp" data-onload="bmgCmptOnload"
+                data-onerror="bmgCmptOnerror">
+              </picture>
+            </div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">点击左上角红框中的…按钮，在右下角红框中选择All Chemical Formats，选择需要分割的sdf文件。注意若在input below前打勾，则…按钮会显示为灰色。</span>
+              <span
+              data-v-2505e99a=""></span>
+            </p>
+            <div>
+              <picture>
+                <img src="2_一种使用OpenBabel将包含多个小分子的sdf.webp" data-onload="bmgCmptOnload"
+                data-onerror="bmgCmptOnerror">
+              </picture>
+            </div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">在右侧红框中选择导出格式为mol2，选择导出位置（这里文件名可以随便填没有影响），在中间红框标记的选项前打勾。若先打勾再选格式则中间的选项会被刷新，需要重新选择。</span>
+              <span
+              data-v-2505e99a=""></span>
+            </p>
+            <div>
+              <picture>
+                <img src="3_一种使用OpenBabel将包含多个小分子的sdf.webp" data-onload="bmgCmptOnload"
+                data-onerror="bmgCmptOnerror">
+              </picture>
+            </div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">点击上方的CONVERT按钮</span>
+            </p>
+            <div>
+              <picture>
+                <img src="一种使用OpenBabel将包含多个小分子的sdf.webp" data-onload="bmgCmptOnload"
+                data-onerror="bmgCmptOnerror">
+              </picture>
+            </div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">在选择的导出位置即可找到仅包含单个小分子结构的mol2文件：&nbsp;</span>
+              <span
+              data-v-2505e99a=""></span>
+            </p>
+            <div>
+              <picture>
+                <img src="1_一种使用OpenBabel将包含多个小分子的sdf.webp" data-onload="bmgCmptOnload"
+                data-onerror="bmgCmptOnerror">
+              </picture>
+            </div>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">在使用此方法处理包含10个小分子的sdf文件时全部分子都可被导出，但在处理包含100个小分子的sdf文件时会丢失十个左右的结构。目前尚不清楚导致此现象的原因，如有人知悉还请不吝指教。</span>
+            </p>
+            <p data-v-2505e99a="" data-v-c0b8fcf4=""><span data-v-2505e99a="">另外若导出的文件名太长（例如图中的情况），在使用iGEMDOCK进行对接时会卡住，因此可以将导出的mol2文件全选并右键选择重命名，起个短一点的名字。重命名后的文件在Discovery Studio中打开依然会显示原本的名字，不用担心会弄混结构。</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
