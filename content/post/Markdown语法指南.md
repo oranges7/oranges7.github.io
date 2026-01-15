@@ -3,7 +3,7 @@ title: Markdown 语法指南
 date: 2026-01-14
 share: "true"
 description: 本文提供了一些基本的 Markdown 语法示例，可用于 Hugo 内容文件，同时还展示了 Hugo 主题中基本 HTML 元素是否带有 CSS 样式修饰。
-dir: post
+dir: content/post
 math: "true"
 ---
 
